@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Introdução a Programação com Javscript</h1>
+    <h2>Multiplicação Simples</h2>
+    <p>
+        Você receberá dois valores inteiros. <br>
+        Faça a leitura e em seguida calcule o produto entre estes dois valores. Atribua esta operação à variável PROD, mostrando esta de acordo com a mensagem de saída esperada (exemplo abaixo).  <br> 
+
+        Entrada <br>
+        A entrada contém 2 valores inteiros. <br>
+        
+        Saída <br>
+        Exiba a variável PROD conforme exemplo abaixo, tendo obrigatoriamente um espaço em branco antes e depois da igualdade. <br>
+                
+         
+        Exemplos de Entrada	Exemplos de Saída <br>
+        3 <br>
+        9 <br>
+        
+        PROD = 27 <br>
+        
+        -30 <br>
+        10 <br>
+        
+        PROD = -300 <br>
+        
+        0 <br>
+        9 <br>
+        
+        PROD = 0  <br>
+    </p>
+    <label for="var1">Valor 1</label>
+    <input type="number" id="var1">
+    
+    <label for="var2">Valor 2</label>
+    <input type="number" id="var2">
+
+    <button onclick="finaliza()">Calcular</button><br><br>
+
+    <label for="resultado">Resultado:</label>
+    <output id="resultado"></output>
+
+    <script >
+        function finaliza(){
+            let n1 = Number(document.getElementById("var1").value)
+            let n2 = Number(document.getElementById("var2").value)
+            let res = document.getElementById("resultado")
+            
+            
+            res.innerHTML = `${n1*n2}`
+            
+        }
+    </script>
+</body>
+</html>

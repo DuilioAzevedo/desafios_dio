@@ -22,9 +22,14 @@ PROD = -300
 0
 9
 
-PROD = 0 */
+PROD = 0 
 
 let valor1 = parseInt(gets());
 let valor2 = parseInt(gets());
 let total = valor1 * valor2; 
-console.log("PROD = " + total);
+console.log("PROD = " + total);*/
+
+var valor1 = document.getElementById("var1")
+var valor2 = document.getElementById("var2")
+var resultado = valor1.innerText*valor2.innerText
+document.write(resultado)
